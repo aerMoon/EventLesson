@@ -6,7 +6,7 @@ namespace Zadanie
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("допустим это мой ответ на задание");
+            Console.WriteLine("допустим это мой ответ на задание...");
         }
     }
 }
