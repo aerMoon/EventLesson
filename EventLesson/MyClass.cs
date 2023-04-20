@@ -10,14 +10,8 @@ namespace EventLesson
         public event MyDelegate MyEvent;
         
         //метод для генерирования события
-        public void RaiseMyEvent(string txt)
-        {
-            //если для события предусмотрены обработчики:
-            if (MyEvent!=null)
-            {
-                //генерирование события:
-                MyEvent(txt);
-            }
-        }
+        public void RaiseMyEvent(string txt) => MyEvent?.Invoke(txt);
+       
+
     }
 }
